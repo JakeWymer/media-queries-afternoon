@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat|Roboto+Slab|Droid+Serif');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Roboto Slab','Helvetica Neue',Helvetica,Arial,sans-serif;
+    line-height: 1.5;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 10%;
+    background-color: #212529;
+}
+
+header ul {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+header a {
+    color: #fed136;
+    font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
+    font-size: 1.25rem;
+}
+
+header button {
+    padding: 13px;
+    border-radius: 5px;
+    color: white;
+    background-color: #fed136;
+    font-family: 'Montserrat';
+    border: none;
+    font-size: 12px;
+}
+
+.welcome-wrap {
+    background-image: url('./assets/asset\ 23.jpeg');
+    background-position: center center;
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.welcome-wrap button {
+    border-radius: 5px;
+    color: white;
+    background-color: #fed136;
+    font-family: 'Montserrat';
+    border: none;
+    font-size: 18px;
+    padding: 20px 40px;
+    margin-top: 20px;
+}
+
+.yellow {
+    color: #fed136;
+}
+
+.greeting-1 {
+    font-size: 22px;
+    font-family: 'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-style: italic;
+}
+
+.greeting-2 {
+    font-size: 50px;
+    font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+section {
+    padding-top: 50px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.title h2 {
+    font-size: 40px;
+    font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+    margin-bottom: 10px;
+}
+
+.title h3 {
+    font-size: 16px;
+    font-style: italic;
+    font-family: 'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #6c757d;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service, .portfolio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15%;
+    padding: 0 25px;
+}
+
+.service h4 {
+    margin: 5% 0;
+}
+
+.service p, .portfolio-item p, .about-item p, .person p, .team-text {
+    color: #6c757d;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+#portfolio .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-item {
+    margin-bottom: 5%;
+}
+
+.portfolio-item h4 {
+    margin-top: 5%;
+}
+
+.portfolio-item img {
+    width: 100%;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about .content {
+    position: relative;
+    width: 700px;
+}
+
+.about-item {
+    display: flex;
+    margin-bottom: 15%;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about-content {
+    padding: 0 20%;
+}
+
+.about-item .text {
+    padding: 0 20px 0 35px;
+    text-align: left;
+}
+
+.about-item img, .about-img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 7px solid #e9ecef;
+}
+
+.about-img {
+    background-color: #fed136;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.about-img h4 {
+    font-size: 10px;
+    font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+.person img{
+    width: 225px;
+    height: 225px;
+    border: 7px solid #fff;
+    border-radius: 50%;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    margin-top: 5%;
+}
+
+.social a {
+    font-size: 20px;
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border-radius: 100%;
+    outline: 0;
+    background-color: #212529;
+}
+
+.team-text {
+    padding: 0 10%;
+    text-align: center;
+}
+
+@media (min-width: 576px){
+    .greeting {
+        padding: 5%;
+    }
+
+    .portfolio-item {
+        max-width: 50%;
+    }
+
+    .person {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px){
+    .welcome-wrap {
+        height: 750px;
+    }
+
+    .greeting-1 {
+        font-size: 40px;
+    }
+
+    .greeting-2 {
+        font-size: 75px;
+    }
+
+    .content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .inverse-item {
+        flex-direction: row-reverse;
+        padding-left: 4%;
+    }
+
+    .about-item {
+        justify-content: flex-end;
+        margin-bottom: 5%;
+    }
+
+    .normal-item {
+        padding-right: 4%;
+    }
+
+    .about-item img, .about-img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .about-item .text {
+        padding: 0 20px 20px 30px;
+        width: 40%;
+    }
+
+    .inverse-item .text {
+        text-align: right;
+        width: 40%;
+    }
+
+    .about-content {
+        padding: 0 0;
+    }
+
+    #last-item {
+        justify-content: center;
+    }
+
+    .person {
+        width: 30%;
+    }
+}
+
+@media (min-width: 992px){
+    header {
+        background-color: transparent;
+    }
+
+    header ul {
+        display: flex;
+    }
+
+    header button {
+        display: none;
+    }
+
+    .greeting {
+        padding: 2%;
+    }
+
+    .portfolio-item {
+        max-width: 30%;
+    }
+
+    #about .content {
+        width: 1000px;
+    }
+
+    .about-item img, .about-img {
+        height: 150px;
+        width: 150px;
+    }
+}
